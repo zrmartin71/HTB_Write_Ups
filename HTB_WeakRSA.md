@@ -17,7 +17,7 @@ Link to learn more about RSA - https://www.encryptionconsulting.com/education-ce
 ## Skill(s)
 Cryptography
 
-## Step 1
+## Walkthrough
 Unzip the file with the password provided when you downloaded the file.
 
 ![image](https://github.com/zrmartin71/HTB_Write_Ups/assets/54414820/96efb711-36c1-4795-9074-f51d44ff586a)
