@@ -14,7 +14,7 @@ Link to RSA tool - https://github.com/RsaCtfTool/RsaCtfTool
 Link to learn more about RSA - https://www.encryptionconsulting.com/education-center/what-is-rsa
 
 ## Skill(s)
-Reverse Engineering
+Cryptography
 
 ## Step 1
 Unzip the file with the password provided when you downloaded the file.
