@@ -8,6 +8,7 @@ This is a write-up for the Hack The Box "Weak RSA" room. Let's get Started!
 ## Tools Used
 Libre Office
 
+RSA tool
 ## Resources
 Link to RSA tool - https://github.com/RsaCtfTool/RsaCtfTool
 
