@@ -6,7 +6,7 @@ This is a write-up for the Hack The Box "You Know 0xDiablos" room. Let's get Sta
 ![image](https://github.com/zrmartin71/HTB_Write_Ups/assets/54414820/9f5b5793-01ca-4944-b4a0-86c7f937fe8f)
 
 ## Tools Used
-7zip
+7zip, ghidra, gdb
 
 ## Resources
 CTF101 - Binary Exploitation: https://ctf101.org/binary-exploitation/overview/
