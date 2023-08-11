@@ -107,7 +107,7 @@ Created a new notification and set the parameter
 
 ![image](https://github.com/zrmartin71/HTB_Write_Ups/assets/54414820/36d0b112-440f-4613-95a1-333bd7a71fb2)
 
-I ran into some issues using psexec.py. The was a lib causing an issue, so I decided to use the Metasploit exploit mentioned in the CVE.
+I ran into some issues using psexec.py. There was a lib causing an issue, so I decided to use the Metasploit exploit mentioned in the CVE.
 
 ![image](https://github.com/zrmartin71/HTB_Write_Ups/assets/54414820/5df8685f-74a5-49bb-8dbe-668f2a1b3a44)
 
