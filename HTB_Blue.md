@@ -9,7 +9,7 @@ This is a write-up for the Hack The Box "Blue" room. Let's get Started!
 Blue, while possibly the most simple machine on Hack The Box, demonstrates the severity of the EternalBlue exploit, which has been used in multiple large-scale ransomware and crypto-mining attacks since it was leaked publicly.
 
 ## Tools Used
-nmap, metasploit
+Nmap, Metasploit
 
 ## Resources
 
@@ -45,11 +45,11 @@ Time to look around.
 
 ![image](https://github.com/zrmartin71/HTB_Write_Ups/assets/54414820/ad799a53-2073-4153-b523-4f3f64acf9a8)
 
-User Flag aquired.
+User Flag acquired.
 
 ![image](https://github.com/zrmartin71/HTB_Write_Ups/assets/54414820/db525c1c-239b-4950-9b5b-582eeb071c4f)
 
-Root Flag aquired.
+Root Flag acquired.
 
 ![image](https://github.com/zrmartin71/HTB_Write_Ups/assets/54414820/fca85ba9-c100-42f3-8bff-a9cf0a8d8569)
 
@@ -57,7 +57,7 @@ Blue Pwned!
 
 ![image](https://github.com/zrmartin71/HTB_Write_Ups/assets/54414820/27c59450-ee1c-40a4-853b-2af4e49d1659)
 
-This is the most script kiddie thing i've every done XD. A win is a win ¯\\\_(ツ)_/¯
+This is the most script kiddie thing I've ever done XD. A win is a win ¯\\\_(ツ)_/¯
 
 ![win_gif](https://github.com/zrmartin71/HTB_Write_Ups/assets/54414820/adc16bc9-3b19-4e99-92ae-78b94b3aa4d1)
 
