@@ -1,6 +1,6 @@
 # Chase
 ## Introduction
-This is a write-up for the Hack The Box "Chase" room. Lets get Started!
+This is a write-up for the Hack The Box "Chase" room. Let's get Started!
 
 ## Difficulty: Easy
 ![image](https://github.com/zrmartin71/HTB_Write_Ups/assets/54414820/28528171-0ebf-49e0-999f-0668c5636656)
@@ -27,7 +27,7 @@ Unzip the file and open the pcap.
 
 ![image](https://github.com/zrmartin71/HTB_Write_Ups/assets/54414820/cbed6a60-5274-407b-84f0-43444db56387)
 
-This is my first time using Wireshark without any guidance, so I'm just gonna look around at the different tabs and see how I can use them. There's a total of 216 packets, so I'm not going to look at them one by one. I'll first try filtering them by http protocol.
+This is my first time using Wireshark without guidance, so I'm just gonna look around at the different tabs and see how to use them. There's a total of 216 packets, so I'm not going to look at them one by one. I'll first try filtering them by HTTP protocol.
 
 ![image](https://github.com/zrmartin71/HTB_Write_Ups/assets/54414820/a5deadc1-212b-4447-9fb1-0f50df19764c)
 
