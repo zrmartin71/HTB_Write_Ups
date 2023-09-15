@@ -1,6 +1,6 @@
 # Event Horizon
 ## Introduction
-This is a write-up for the Hack The Box "Event Horizon" room. Lets get Started!
+This is a write-up for the Hack The Box "Event Horizon" room. Let's get Started!
 
 ## Difficulty: Easy
 ![image](https://github.com/zrmartin71/HTB_Write_Ups/assets/54414820/57607765-3009-4884-8243-1f79787dfb00)
@@ -30,7 +30,7 @@ The TraceFormat folder is empty, so I will just look at the logs. It took me 10 
 
 ![image](https://github.com/zrmartin71/HTB_Write_Ups/assets/54414820/35ad0e30-04af-4228-92b7-217208b7ad20)
 
-Now instead of 300 somthing logs to look through I only have 28. Now that I've filtered out a lot of them I can actually start looking at the logs in depth. The description mentions the attackers went out of their way to clear powershell logs so I will look there first.
+Now instead of 300 somthing logs to look through I only have 28. Now that I've filtered out a lot of them I can actually start looking at the logs in depth. The description mentions the attackers went out of their way to clear Powershell logs so I will look there first.
 
 ![image](https://github.com/zrmartin71/HTB_Write_Ups/assets/54414820/db1b5ab9-4c4e-4b12-8f6b-1a6bce5458e1)
 
@@ -38,7 +38,7 @@ Filter further by just looking at the "warning" levels.
 
 ![image](https://github.com/zrmartin71/HTB_Write_Ups/assets/54414820/7702c4eb-3acb-4f51-a9cf-4f8e4107a476)
 
-So we can see 2 dominate event IDs:
+So we can see 2 dominant event IDs:
  - 1.) Event 4100
  - 2.) Event 4104
 
@@ -50,7 +50,7 @@ So we can see 2 dominate event IDs:
 
  ![image](https://github.com/zrmartin71/HTB_Write_Ups/assets/54414820/66253311-e9ab-4a1a-9d2c-53df7eaac062)
 
-The hint in the decription helped, but if I didn't do any filtering this would have easily taken the same amount of time as the first blood.
+The hint in the description helped, but if I didn't do any filtering this would have easily taken the same amount of time as the first blood.
 
 ![image](https://github.com/zrmartin71/HTB_Write_Ups/assets/54414820/43bfc9eb-5003-444e-8308-1f1eb058ee29)
 
