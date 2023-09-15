@@ -50,7 +50,7 @@ So we can see 2 dominant event IDs:
 
  ![image](https://github.com/zrmartin71/HTB_Write_Ups/assets/54414820/66253311-e9ab-4a1a-9d2c-53df7eaac062)
 
-The hint in the description helped, but if I didn't do any filtering this would have easily taken the same amount of time as the first blood.
+The hint in the description helped, but if I didn't filter anything this would have easily taken the same amount of time as the first blood.
 
 ![image](https://github.com/zrmartin71/HTB_Write_Ups/assets/54414820/43bfc9eb-5003-444e-8308-1f1eb058ee29)
 
