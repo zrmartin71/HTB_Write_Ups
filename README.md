@@ -1,2 +1,2 @@
 # HTB_Write_Ups
-A repository of walkthroughs of all the HTB rooms I've completed.
+A repository of walkthroughs/journals of all the HTB rooms I've completed.
