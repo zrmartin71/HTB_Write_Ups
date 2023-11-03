@@ -9,13 +9,13 @@ This is a write-up for the Hack The Box "Export" room. Let's get Started!
 "We spotted a suspicious connection to one of our servers and immediately took a memory dump. Can you figure out what the attackers were up to?"
 
 ## Tools Used
-Volatility
+Volatility, Cyber chef
 
 ## Resources
-Commando VM
+Commando VM, SANS SIFT VM
 
 ## Skill(s)
-Forensics 
+Memory Forensics 
 
 ## Points
 ![image](https://github.com/zrmartin71/HTB_Write_Ups/assets/54414820/d8cc0871-1c77-4704-8717-397b1ac16217)
@@ -34,7 +34,7 @@ I am going to use the windows.pslist command to see what processes were running 
 
 ![image](https://github.com/zrmartin71/HTB_Write_Ups/assets/54414820/7ff1b61d-1c10-47e0-93e8-4b34a153a030)
 
-I didn't see much here other than when they used a tool to caputure the memory dump.
+I didn't see much here other than when they used a tool to capture the memory dump.
 
 I'm going to run the help command to see what else I can do in Volatility.
 
@@ -78,7 +78,7 @@ Going to take this highlighted part from the output and put it into cyberchef.
 
 ![image](https://github.com/zrmartin71/HTB_Write_Ups/assets/54414820/e8e5b5db-10e6-4102-a69a-9933bbcbe071)
 
-Finally! This took way longer than i expected lol.
+Finally! This took way longer than I expected lol.
 
 ![celebration_yes](https://github.com/zrmartin71/HTB_Write_Ups/assets/54414820/65a755f9-3722-410a-81ba-9891a8e726b7)
 
