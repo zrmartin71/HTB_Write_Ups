@@ -1,4 +1,4 @@
-# Under Construction
+# Blue
 ## Introduction
 This is a write-up for the Hack The Box "Blue" room. Let's get Started!
 
