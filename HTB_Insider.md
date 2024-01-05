@@ -26,11 +26,11 @@ Unzip the file provided.
 
 ![image](https://github.com/zrmartin71/HTB_Write_Ups/assets/54414820/f803ac89-68ec-4dc4-a714-37902f51a4fc)
 
-First, I am going to create the new user profile in Firefox by typing "about:profiles" in the url bar.
+First, I am going to create a new user profile in Firefox by typing "about:profiles" in the URL bar.
 
 ![image](https://github.com/zrmartin71/HTB_Write_Ups/assets/54414820/799f17cb-04e2-499e-8c16-6c83a5d8f89b)
 
-Then select "create a new profile".
+Then select "Create a new profile".
 
 ![image](https://github.com/zrmartin71/HTB_Write_Ups/assets/54414820/90292e5d-e9c0-4f72-be65-d20c78544cda)
 
@@ -42,11 +42,11 @@ Change of plans. This seems to be the more complicated route.
 
 ![changeOfPlans_gif](https://github.com/zrmartin71/HTB_Write_Ups/assets/54414820/f317a17a-51eb-4e91-934c-3b1e24a3c156)
 
-Going to use the firefed approch from the walkthrough because it simple. 
+Going to use the firefed approach from the walkthrough because it is simple. 
 
 ![easyWay_gif](https://github.com/zrmartin71/HTB_Write_Ups/assets/54414820/63c469b3-91ea-4aa6-9c79-6e839a7b0320)
 
-Install firefed with the following command. More info on tool linked below.
+Install firefed with the following command. More info on the tool is linked below.
 ```
 pip install firefed --upgrade 
 ```
