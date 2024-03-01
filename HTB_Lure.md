@@ -6,7 +6,7 @@ This is a write-up for the Hack The Box "Lure" room. Let's get Started!
 ![image](https://github.com/zrmartin71/HTB_Write_Ups/assets/54414820/2b41ab99-7a3a-4d0d-b680-264248d47a01)
 
 ## Room Description
-The finance team received an important looking email containing an attached Word document. Can you take a look and confirm if it's malicious?
+The finance team received an important-looking email containing an attached Word document. Can you take a look and confirm if it's malicious?
 
 ## Tools Used
 
@@ -34,7 +34,7 @@ Not gonna lie if I didn't know any better I would probably click enable editing,
 
 ![sus_gif](https://github.com/zrmartin71/HTB_Write_Ups/assets/54414820/03c90288-cae6-4f9d-911e-e26a67f9c176)
 
-Now let's extract the macros using olevba.
+Now let's extract the macros using Olevba.
 
 ```
 sudo -H pip install -U oletools
@@ -52,23 +52,23 @@ Certified Sus document smh.
 
 ![sus_gif2](https://github.com/zrmartin71/HTB_Write_Ups/assets/54414820/3c6498cc-09d4-42aa-badd-4095f895702b)
 
-I have a few keywords highlighted in red. Investigating the "shell" and "powershell" keywords are somthing worth looking into. Lets decrypt the text in that area.
+I have a few keywords highlighted in red. Investigating the "shell" and "powershell" keywords are something worth looking into. Let's decrypt the text in that area.
 
 ![image](https://github.com/zrmartin71/HTB_Write_Ups/assets/54414820/a802653a-fe9c-4f3c-9d8e-fd5fd5bed8b5)
 
-Using magic in cyber chef I can see that base64 is being used. Lets now decode the text from base64.
+Using magic in Cyber Chef I can see that base64 is being used. Let's now decode the text from base64.
 
 ![image](https://github.com/zrmartin71/HTB_Write_Ups/assets/54414820/cec1705f-4c0b-4b89-86f3-640b8e6ab0ba)
 
-Its a little more readable now, but not what I'm looking for. Let's use the search fuction in cyber chef to help with decoding it further.
+It's a little more readable now, but not what I'm looking for. Let's use the search function in Cyber Chef to help with decoding it further.
 
 ![image](https://github.com/zrmartin71/HTB_Write_Ups/assets/54414820/9bb5e4f0-0744-477f-80d2-f0dcfdc3251b)
 
-That's even better. Now copy and paste the yellow part of the output into powershell.
+That's even better. Now copy and paste the yellow part of the output into Powershell.
 
 ![image](https://github.com/zrmartin71/HTB_Write_Ups/assets/54414820/6bd2a475-9e31-4554-b448-e5e527180adf)
  
-Got the flag but it's still a bit murky. I can throw the url back into cyber chef and see if that works.
+Got the flag but it's still a bit murky. I can throw the URL back into Cyber Chef and see if that works.
 
 ![image](https://github.com/zrmartin71/HTB_Write_Ups/assets/54414820/fd5ffd80-a74f-4528-90ae-5f99fa96b075)
 
