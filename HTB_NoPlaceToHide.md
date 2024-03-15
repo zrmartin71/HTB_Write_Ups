@@ -6,7 +6,7 @@ This is a write-up for the Hack The Box "No Place To Hide" room. Let's get Start
 ![image](https://github.com/zrmartin71/HTB_Write_Ups/assets/54414820/8e8dbe2b-8358-4b73-b971-3ed339511a81)
 
 ## Room Description
-We found evidence of a password spray attack against the Domain Controller, and identified a suspicious RDP session. We'll provide you with our RDP logs and other files. Can you see what they were up to?
+We found evidence of a password spray attack against the Domain Controller and identified a suspicious RDP session. We'll provide you with our RDP logs and other files. Can you see what they were up to?
 
 ## Tools Used
 
@@ -26,19 +26,19 @@ Unzip the folder.
 
 ![image](https://github.com/zrmartin71/HTB_Write_Ups/assets/54414820/4c2d1590-59ed-4419-9847-ab71de507b55)
 
-We have two files here. Just gonna google what kind of data theses files hold.
+We have two files here. Just gonna google what kind of data these files hold.
 
 bcache24.bmc is a bit map file used for RDP. The following link explains this well.
 
 Link: https://www.allthingsdfir.com/do-you-even-bitmap-cache-bro/
 
-There article mentions the BMC tool. I can use that to parce the bcache file and the Cache0000 file.
+Their article mentions the BMC tool. I can use that to parse the bcache file and the Cache0000 file.
 
 BMC Tool - https://github.com/ANSSI-FR/bmc-tools
 
 ![image](https://github.com/zrmartin71/HTB_Write_Ups/assets/54414820/2180693c-a5b9-4a52-bde3-39343eb65dd4)
 
-Having trouble parcing the bcache24 file, but that could just be user error. Let's try the other file and then go back.
+Having trouble parsing the bcache24 file, but that could just be a user error. Let's try the other file and then go back.
 
 ![image](https://github.com/zrmartin71/HTB_Write_Ups/assets/54414820/34cdcbc4-1f02-433e-ae11-85c2335cc80b)
 
@@ -56,7 +56,7 @@ Let's try this again.
 
 ![image](https://github.com/zrmartin71/HTB_Write_Ups/assets/54414820/e5d35f8b-441e-4608-a8ca-bee9c478c882)
 
-Alright this is better, but i definitly broke something.
+Alright, this is better, but I definitely broke something.
 
 ![image](https://github.com/zrmartin71/HTB_Write_Ups/assets/54414820/2aa8fd49-ea6a-47d8-abed-46f51071910b)
 
