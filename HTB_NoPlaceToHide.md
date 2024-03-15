@@ -9,7 +9,7 @@ This is a write-up for the Hack The Box "No Place To Hide" room. Let's get Start
 We found evidence of a password spray attack against the Domain Controller and identified a suspicious RDP session. We'll provide you with our RDP logs and other files. Can you see what they were up to?
 
 ## Tools Used
-
+BMC tool
 
 ## Resources
 
