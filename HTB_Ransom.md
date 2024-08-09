@@ -53,3 +53,53 @@ After mousing over the variables used in the encryption code, I see that the hex
 You see it quite a few times at the end of the file. I didn't even notice.
 
 In this video (https://www.youtube.com/watch?v=7ev6Iq4gpTE) they used a Python script to decode the file, but couldn't get the byte array error to go away. I will use the same script, and see if I can solve the issue.
+
+Oooorrrrr...I can have AI write break it down and write it for me.
+
+![idea](https://github.com/user-attachments/assets/6e64a240-e400-42c1-b44e-36cd383f520d)
+
+```
+def decrypt(data, key):
+  """Decrypts the given data using the specified key."""
+  decrypted_data = bytearray()
+  for i, byte in enumerate(data):
+    decrypted_byte = byte ^ key[i % len(key)]
+    decrypted_data.append(decrypted_byte)
+  return decrypted_data
+
+# Replace with the actual encrypted data
+encrypted_data = b"your_encrypted_data_here"
+
+# Key derivation (adjust as needed based on the actual key generation logic)
+key = b"your_derived_key_here"  # Replace with the derived key
+
+decrypted_data = decrypt(encrypted_data, key)
+print(decrypted_data.decode())
+
+```
+
+Alright. Here's the code Gemini made for me. Its basically the same as the one in the video, but let's see if this runs into the same issue.
+
+![image](https://github.com/user-attachments/assets/7b98f03a-c18a-4e62-83ac-828ad2c99c2a)
+
+Not what I'm looking for lets make some changes and see if it works.
+
+```
+def decrypt(data, key):
+  """Decrypts the given data using the specified key."""
+  decrypted_data = bytearray()
+  for byte in enumerate(data):
+    decrypted_byte = byte ^ key[i % len(key)]
+    decrypted_data.append(decrypted_byte)
+  return decrypted_data
+
+# Replace with the actual encrypted data
+encrypted_data = b"login.xlsx.enc"
+
+# Key derivation (adjust as needed based on the actual key generation logic)
+key = b"SUPERSECURE"  # Replace with the derived key
+
+decrypted_data = decrypt(encrypted_data, key)
+print(decrypted_data.decode())
+
+```
