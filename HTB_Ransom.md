@@ -78,28 +78,8 @@ print(decrypted_data.decode())
 
 ```
 
-Alright. Here's the code Gemini made for me. Its basically the same as the one in the video, but let's see if this runs into the same issue.
+Alright. Here's the code Gemini made for me. It's basically the same as the one in the video, but let's see if this runs into the same issue.
 
 ![image](https://github.com/user-attachments/assets/7b98f03a-c18a-4e62-83ac-828ad2c99c2a)
 
 Not what I'm looking for lets make some changes and see if it works.
-
-```
-def decrypt(data, key):
-  """Decrypts the given data using the specified key."""
-  decrypted_data = bytearray()
-  for byte in enumerate(data):
-    decrypted_byte = byte ^ key[i % len(key)]
-    decrypted_data.append(decrypted_byte)
-  return decrypted_data
-
-# Replace with the actual encrypted data
-encrypted_data = b"login.xlsx.enc"
-
-# Key derivation (adjust as needed based on the actual key generation logic)
-key = b"SUPERSECURE"  # Replace with the derived key
-
-decrypted_data = decrypt(encrypted_data, key)
-print(decrypted_data.decode())
-
-```
