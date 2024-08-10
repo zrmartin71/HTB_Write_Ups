@@ -140,4 +140,4 @@ n = decryptedToChar(decrypted_data)
 print(n)
 
 ```
-I made a little more progress. I got the same output as the video.
+I made a little more progress. I got the same output as the video. The decryptedToChar method still has some leftover encryption. 
