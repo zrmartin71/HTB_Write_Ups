@@ -82,4 +82,62 @@ Alright. Here's the code Gemini made for me. It's basically the same as the one 
 
 ![image](https://github.com/user-attachments/assets/7b98f03a-c18a-4e62-83ac-828ad2c99c2a)
 
-Not what I'm looking for lets make some changes and see if it works.
+Not what I'm looking for let's make some changes and see if it works.
+
+```
+def decrypt(data, key):
+  """Decrypts the given data using the specified key."""
+  decrypted_data = bytearray()
+  for byte in enumerate(data):
+    decrypted_byte = byte ^ key[i % len(key)]
+    decrypted_data.append(decrypted_byte)
+  return decrypted_data
+
+# Replace with the actual encrypted data
+encrypted_data = b"login.xlsx.enc"
+
+# Key derivation (adjust as needed based on the actual key generation logic)
+key = b"SUPERSECURE"  # Replace with the derived key
+
+decrypted_data = decrypt(encrypted_data, key)
+print(decrypted_data.decode())
+
+```
+Back to the drawing board.
+
+```
+import base64
+
+def decrypt(data, key):
+  """Decrypts the given data using the specified key."""
+  decrypted_data = []
+  count = 0
+  for byte in data:
+    decrypted_byte = ord(byte) - key[count % len(key)] #Grabs ASCII value of byte then subtracts key for byte
+    decrypted_data.append(decrypted_byte)
+    count+=1
+  return decrypted_data
+
+def decryptedToChar(data2):
+  #Returns data to ASCII value
+  output = []
+
+  for i in data2:
+    letter = chr(i)
+    output.append(letter)
+  return output
+
+# Read the encrypted file
+file = open('login.xlsx.enc', 'r', encoding='ansi')
+encrypted = file.read()
+
+# Key derivation (adjust as needed based on the actual key generation logic)
+key = list(b'SUPERSECURE')  # Replace with the derived key
+
+decrypted_data = decrypt(encrypted, key)
+print(decrypted_data)
+n = decryptedToChar(decrypted_data)
+print(n)
+
+```
+I made a little more progress. I got the same output as the video.
