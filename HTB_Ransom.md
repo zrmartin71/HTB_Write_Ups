@@ -103,7 +103,7 @@ decrypted_data = decrypt(encrypted_data, key)
 print(decrypted_data.decode())
 
 ```
-Back to the drawing board.
+It didn't work. The goal was to have Gemini write the script for me. However, I'm going to need to put some effort into this. Back to the drawing board.
 
 ```
 import base64
