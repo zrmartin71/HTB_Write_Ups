@@ -55,7 +55,7 @@ You see it quite a few times at the end of the file. I didn't even notice.
 
 In this video (https://www.youtube.com/watch?v=7ev6Iq4gpTE) they used a python script to decode the file, but couldn't get the byte array error to go away. I'm going to use the same script and see if i can solve the issue.
 
-Oooorrrrr...I can have AI write break it down and write it for me.
+Oooorrrrr...I can have AI break it down and write it for me.
 
 ![idea](https://github.com/user-attachments/assets/6e64a240-e400-42c1-b44e-36cd383f520d)
 
