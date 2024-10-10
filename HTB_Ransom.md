@@ -107,7 +107,7 @@ print(decrypted_data.decode())
 Back to the drawing board.
 ![image](https://github.com/user-attachments/assets/873dfe78-2e04-4d26-bda6-87e49c921972)
 ![image](https://github.com/user-attachments/assets/d55668a7-718d-47df-8062-8d4e3fdf371f)
-![image](https://github.com/user-attachments/assets/05cb8ea7-3295-43a4-b262-e7a0a209fff5)
+![image](https://github.com/user-attachments/assets/166a847f-3cf2-430a-9ec1-91bfbe6f23a5)
 ```
 import base64
 
