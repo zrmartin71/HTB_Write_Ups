@@ -29,13 +29,13 @@ We have an encrypted excel sheet and an executable. Now to figure out how to dec
 
 ![waiting_gif](https://github.com/user-attachments/assets/91cf1bf9-ce5d-4487-9ba0-5be9bbbdb72e)
 
-So i need to use ghidra for this. According to the guide for the box, you need basic decompiler skills. So lets try putting the .enc file in ghidra and see what I get.
+So I need to use ghidra for this. According to the guide for the box, you need basic decompiler skills. Let's try putting the .enc file in ghidra and see what I get.
 
 Ghidra was a pain in the ass to install, but this video made it easy: https://www.youtube.com/watch?v=rt6Z_ph8ZAg
 
 ![image](https://github.com/user-attachments/assets/9d70ef1f-668c-4667-b5d8-8ab902ef9bbe)
 
-Nice I'm up and running...now to learn how to decrypt the file. Gonna search for anything in the code that has to do with encrypting or decrypting.
+Nice! I'm up and running...now to learn how to decrypt the file. Gonna search for anything in the code that has to do with encrypting or decrypting.
 
 ![image](https://github.com/user-attachments/assets/83008f18-b9a5-4e48-8b07-80107207b20e)
 
@@ -47,11 +47,11 @@ Let's select the first one and see what I can understand.
 
 ![image](https://github.com/user-attachments/assets/6a6f7518-1e04-4d2a-a643-ad4027caf496)
 
-After mousing over the veriables used in the encryption code, I see that the hex translates to "SUPERSECRUE" or "super secure". I did see this when I pulled strings from the "login" file.
+After mousing over the variables used in the encryption code, I see that the hex translates to "SUPERSECRUE" or "super secure". I did see this when I pulled strings from the "login" file.
 
 ![image](https://github.com/user-attachments/assets/a5e10df5-7d26-48e3-8e7c-b56e5538b6b1)
 
-You actually see it quite a few times at the end of the file. I didn't even notice.
+You see it quite a few times at the end of the file. I didn't even notice.
 
 In this video (https://www.youtube.com/watch?v=7ev6Iq4gpTE) they used a python script to decode the file, but couldn't get the byte array error to go away. I'm going to use the same script and see if i can solve the issue.
 
@@ -79,11 +79,11 @@ print(decrypted_data.decode())
 
 ```
 
-Alright. Here's the code Gemini made for me. Its basically the same as the one in the video, but let's see if this runs into the same issue.
+Alright. Here's the code Gemini made for me. It's basically the same as the one in the video, but let's see if this runs into the same issue.
 
 ![image](https://github.com/user-attachments/assets/7b98f03a-c18a-4e62-83ac-828ad2c99c2a)
 
-Not what I'm looking for lets make some changes and see if it works.
+Not what I'm looking for. Let's make some changes and see if it works.
 
 ```
 def decrypt(data, key):
@@ -141,11 +141,11 @@ n = decryptedToChar(decrypted_data)
 print(n)
 
 ```
-Made a little more progress. I got the same output as the video. I'm satisfied with this but I'm going to find a different approcah so I can move on.
+Made a little more progress. I got the same output as the video. I'm satisfied with this but I'm going to find a different approach so I can move on.
 
-This video () shows how to decrypt the file in cyberchef.
+This video (https://youtu.be/VLPsY14blnA?si=EJe3rrOTWQ1COf7J) shows how to decrypt the file in cyberchef.
 
-First, I have to upload as a file and use SUB with the key I found from Ghidra.
+First, I have to upload it as a file and use SUB with the key I found from Ghidra.
 
 ![image](https://github.com/user-attachments/assets/ccc8c675-d25d-4c64-8b67-efbc8498b0c2)
 
@@ -153,7 +153,7 @@ To verify that the file is decrypted we need to see the highlighted string above
 
 ![image](https://github.com/user-attachments/assets/6100574d-0aab-42e2-8de5-b2de8814941a)
 
-We can open the file in kali with libre office and boom we've captured the flag.
+We can open the file in Kali with Libre office and boom we've captured the flag.
 
 ![image](https://github.com/user-attachments/assets/be26c3b5-9d86-4be6-b7ce-6abf97b382a1)
 
