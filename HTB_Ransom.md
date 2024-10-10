@@ -12,8 +12,8 @@ We received an email from Microsoft Support recommending that we apply a critica
 
 
 ## Skill(s)
-Reading optimized code \n
-Writing a ransomware decryptor \n
+Reading optimized code \
+Writing a ransomware decryptor \
 Malware Analysis
 
 ## Points
